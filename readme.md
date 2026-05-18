@@ -14,10 +14,35 @@
    ```bash
    # For development with auto-reload using nodemon
    npm run dev 
+   # Or run directly
+   node src/server.js
+   ```
 
 4. **Access the application:**
-    navigate to `http://localhost:5000` to access the frontend
-   ```
+   Open `http://localhost:5000` in your browser to access the frontend.
+
+---
+
+## Screenshots
+
+Add your screenshots to a folder like `public/screenshots/` and reference them here.
+
+### CAR0001.mp3
+
+![Transcipt result](public/screenshots/ss1.png)
+
+
+![Detected Conditions](public/screenshots/ss2.png)
+
+### CAR0002.mp3
+
+![Transcript result](public/screenshots/ss3.png)
+
+
+![Detected Conditions](public/screenshots/ss4.png)
+
+
+If you do not have screenshots yet, keep this section as a placeholder and replace the image paths once the files are added.
 
 ---
 
