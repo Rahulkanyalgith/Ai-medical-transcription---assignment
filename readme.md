@@ -6,8 +6,7 @@
    ```
 
 2. **Environment Variables:**
-   Ensure you have your `.env` configured with the necessary API keys for transcription, e.g.:
-   ```dotenv
+   ```
    OPENAI_API_KEY=your_api_key_here
    ```
 
@@ -16,8 +15,8 @@
    # For development with auto-reload using nodemon
    npm run dev 
 
-   # For the server to run without auto-reload
-   npm start
+4. **Access the application:**
+    navigate to `http://localhost:5000` to access the frontend
    ```
 
 ---
