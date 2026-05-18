@@ -37,7 +37,7 @@ extractService.js    - Extracts medical conditions from text
 Utils/medicalDictionary.js - A dictionary mapping misspelled words to correct medical 
 
 
-# public folder - Frontend code
+public/(html,css,js) folder - Frontend code
 
 
 
