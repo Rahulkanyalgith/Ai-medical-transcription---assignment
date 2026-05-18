@@ -1,5 +1,3 @@
-
-
 ## How to Run the Project
 
 1. **Install dependencies:**
@@ -15,29 +13,32 @@
 
 3. **Start the server:**
    ```bash
-   npm run dev - for development with auto-reload using nodemon
-   npm start - for the server to run without auto-reload
-   
+   # For development with auto-reload using nodemon
+   npm run dev 
+
+   # For the server to run without auto-reload
+   npm start
    ```
 
+---
 
-
-### Approach
+## Approach
 
 The approach is to make the routes for the transcribe, correction, cleaning, and extraction services as modular as possible. Each service is responsible for a specific part of the pipeline, allowing for easier maintenance and potential future enhancement.
 
-Create the services folder for the individual services, and a utils folder for the medical
+The project is structured with a modular `services` folder for the individual logic components, and a `utils` folder for shared configurations:
 
-whisperServices.js -  Interfaces with the LLM/Whisper API for Speech-to-Text
-correctionService.js - Corrects medical jargon misspellings
-cleaningService.js   - Strips filler words from the transcript
-extractService.js    - Extracts medical conditions from text
+### Services (`src/services/`)
+- **`whisperServices.js`** — Interfaces with the LLM/Whisper API for Speech-to-Text.
+- **`correctionService.js`** — Corrects medical jargon misspellings.
+- **`cleaningService.js`** — Strips filler words from the transcript.
+- **`extractService.js`** — Extracts medical conditions from text.
 
-# utils 
-Utils/medicalDictionary.js - A dictionary mapping misspelled words to correct medical 
+### Utilities (`src/utils/`)
+- **`medicalDictionary.js`** — A dictionary mapping misspelled words to correct medical terminology.
 
-
-public/(html,css,js) folder - Frontend code
+### Frontend (`public/`)
+- Contains the static files (`HTML`, `CSS`, and `JS`) for the frontend user interface.
 
 
 
